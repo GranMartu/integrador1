@@ -1,0 +1,164 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    border-radius: 4px;
+}
+body{
+    background-color: #8ca3a3;
+}
+header{
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    min-height: fit-content;
+    background-color: #484f4f;
+    color: #e0e2e4;
+    overflow: hidden;
+}
+
+.h-left{
+    flex-basis: 820px;
+    flex-shrink: 1;
+}
+header h1{
+    margin-left: 15px;
+    height: 60%;
+    font-size: 650%;   
+    font-weight: 300;
+    text-shadow: 3px 3px black;
+}
+header p{
+    margin-left: 25px;
+    height: 40%;
+    font-style: italic;
+
+}
+header p span{
+    color: #96897f;    ;
+    font-family: 'Cormorant SC', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 250%
+}
+.h-center{
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-grow: 3;
+    height: 100%;    
+}
+.h-center a{
+    height: 100%;
+    border: solid 1px whitesmoke; 
+    transition: all 500ms ease;    
+}
+.h-center a:hover{
+    transform: scale(103%);
+    
+}
+.h-center div p{
+    font-family: 'Roboto Mono', monospace;
+    font-style: bold;
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: 500;
+}
+.h-imagen{
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.logo{
+
+    align-self: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: solid 1px whitesmoke;
+    transition: transform 2s ease-in-out;
+
+}
+.logo:hover {
+    transform: rotate(720deg);    
+  }
+.container-types{
+    height: 15rem;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;  
+    flex-wrap: wrap;
+}
+.cajita{
+    margin: 3px;
+    border: solid whitesmoke 1px;
+}
+.grid1{
+    width: 40rem;
+    height: 15rem;
+    min-width: 35rem;
+    overflow: hidden;
+    margin-right: 0;
+}
+.grid1 h1{
+    margin: 2px 0 0 2px;
+    font-size: 60px;
+    font-style: bold;
+}
+.grid1 p{
+    margin: 2px 0 0 2px;
+    margin-left: 2px;
+    font-size: 30px;
+    font-style: italic;
+}
+.grid2{
+
+    margin-left: 0;
+    height: 15rem;
+    width: 50rem;
+    min-width: 40rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.buttom{
+    width: 100%;
+    margin: 4px;
+    height: 22%;
+}
+.fotis{
+    width: 100%;
+}
+.grid2 a:hover{
+    transform: scale(103%);
+    transition: all 500ms ease; 
+    
+}
+
+/* @media only screen and (max-width:1260px){
+    .container-types{
+        flex-direction: column;
+        
+    }
+    /* .grid1{
+        height: 15rem;
+        border: 1px solid whitesmoke;
+
+    }
+    .grid2{
+        height: 70rem;
+    } */
+
+} */
+
