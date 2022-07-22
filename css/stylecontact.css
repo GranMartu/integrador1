@@ -4,7 +4,6 @@
     padding: 0;
     text-decoration-line: none;
     border-radius: 4px;
-
 }
 body{
     background-color: #8ca3a3;
@@ -13,7 +12,6 @@ textarea{
     height: 50%;
     width: 50%;
 }
-
 legend{
     font-style: italic;
     font-size: xx-large;
