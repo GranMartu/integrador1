@@ -24,6 +24,5 @@
   },
   "nodemonConfig": {
     "ext": "js, jason, html, hbs, css"
-  },
-  "type": "module"
+  }
 }

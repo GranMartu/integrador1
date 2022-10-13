@@ -1,0 +1,97 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #484f4f;
+
+}
+
+.login {
+    padding-top: .5rem;
+}
+
+span {
+    color: #96897f;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 150%
+}
+
+a {
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.form {
+    background-color: #8ca3a3;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px 4px;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-weight: thin;
+    margin: 0 0 40px;
+}
+
+input,
+textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+textarea {
+    border: 2px solid;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.button {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: #e0e2e4;
+    color: black;
+    transition: all 500ms ease;
+}
+
+.button a {
+    color: black;
+}
+
+.button:hover {
+    transform: scale(103%);
+
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
