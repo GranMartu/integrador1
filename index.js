@@ -1,6 +1,9 @@
-// require("./config/mongo")
+require("./config/mongo")
 const express = require("express");
 const hbs = require("express-handlebars");
+const { body, validationResult } = require('express-validator');
+const { registrationrules, contactrules } = require("./config/validation-rules.js")
+// const validationrules = require(".config/validation-rules");
 // const session = require("express-session")
 const PORT = 3001
 const app = express();
@@ -30,15 +33,48 @@ app.get("/", (req, res) => {
 app.get("/contact", (req, res) => {
     res.render("contact", { user: "Miguelito" });
 })
+app.post("/contact", contactrules, (req, res) => {
+    const errors = validationResult(req)
+    if (!errors.isEmpty()) {
+        res.render("/contact", { error: true }, { user: "Miguelito" })
+    }
+})
 app.get("/about", (req, res) => {
     res.render("about");
 })
 app.get("/register", (req, res) => {
     res.render("register");
 })
-app.get("/log-in", (req, res) => {
-    res.render("log-in");
+
+app.post("/register", registrationrules, (req, res) => {
+
+    const { name, bearname, email, password } = req.body;
+    console.log(bearname)
+    res.render("register", { bearname })
+
+})
+app.get("/login", (req, res) => {
+    res.render("login");
+})
+app.post("/login", (req, res) => {
+
 })
 app.get("/notcare", (req, res) => {
     res.render("donotcare");
 })
+app.get("/brown", (req, res) => {
+    res.render("article-brown");
+})
+app.get("/panda", (req, res) => {
+    res.render("article-panda");
+})
+app.get("/polar", (req, res) => {
+    res.render("article-polar");
+})
+app.get("/sun", (req, res) => {
+    res.render("article-sun");
+})
+app.get("/shop", (req, res) => {
+    res.render("shop");
+})
+

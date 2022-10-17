@@ -1,5 +1,6 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
     margin: 5px;
     padding: 0;
     text-decoration-line: none;
@@ -10,9 +11,29 @@ body {
     background-color: #8ca3a3;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #484f4f;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px 4px;
+}
+
+.textcont {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+}
+
 textarea {
+    color: black;
     height: 50%;
-    width: 50%;
+    width: 98%;
 }
 
 legend {
@@ -22,8 +43,7 @@ legend {
 }
 
 .box3 {
-    margin-top: 30px;
-    margin-left: 10px;
+    margin: 40px auto;
     display: flex;
     flex-direction: row;
     height: auto;
@@ -54,4 +74,36 @@ span {
     font-weight: 600;
     font-size: 175%;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.button {
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: #e0e2e4;
+    color: black;
+    transition: all 500ms ease;
+}
+
+.button:hover {
+    transform: scale(103%);
+
+}
+
+.button-block {
+    display: block;
+    width: 50%;
+}
+
+.fbtxt {
+    margin: 0;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.5rem;
+    color: rgb(131, 10, 10);
 }

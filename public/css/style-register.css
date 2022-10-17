@@ -95,3 +95,25 @@ textarea {
     display: block;
     width: 100%;
 }
+
+.fb1 {
+    font-size: 1rem;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+.fb2 {
+    color: #96897f;
+    font-family: 'Cormorant SC', serif;
+    font-style: bold;
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fbtxt {
+    margin: 0;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.5rem;
+    color: rgb(131, 10, 10);
+}
