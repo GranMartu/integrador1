@@ -1,0 +1,48 @@
+<title>You are forever us</title>
+<link rel="stylesheet" href="./css/style-register.css">
+
+<div class="form" , action="/login" , method="POST">
+
+    <div class="register-menu">
+        <div class="button button-block"><a href="/">Back</a></div>
+        <div class="button button-block" id="logout"><a href="/logout">Log-Out</a></div>
+    </div>
+
+    <div class="login">
+        <h1>It seems you've already joined said <span>FUN</span></h1>
+
+        <h3><span>BEAR</span> security is very important for us</h3>
+        <h3>Do you wish to change your login information?</h1>
+
+            <form action="/edit" method="post">
+                <div class="field-wrap">
+                    <label for="editemail">
+                        Email *
+                    </label>
+                    <input type="text" required autocomplete="off" id="editemail" name="editemail" />
+                </div>
+
+                <div class="field-wrap">
+                    <label for="oldpassword">
+                        Old password *
+                    </label>
+                    <input type="text" required autocomplete="off" id="oldpassword" name="oldpassword" />
+                </div>
+
+                <div class="field-wrap">
+                    <label for="password">
+                        New Password *
+                    </label>
+                    <input type="password" required autocomplete="off" id="password" name="password" />
+                </div>
+                <button class="button button-block" />Save changes</button>
+                {{#if message}}
+                <p class="fbtxtverde">{{message}}</p>
+                {{/if}}
+                {{#if errmsg}}
+                <p class="fbtxt">Invalid mail or password</p>
+                {{/if}}
+            </form>
+
+    </div>
+</div>

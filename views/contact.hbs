@@ -5,23 +5,26 @@
         <form action="/contact" method="POST">
             <fieldset>
                 <legend>Is there any pawblem?</legend>
-                <t>Welcome </t>
-                <span>{{user}}</span>
+                <h3><span>Welcome!</span></h3>
+
                 <p>fellow bear lover, what did you think about our page?</p>
-                <div>
-                    <input type="radio" name="opinion" value="good">
+                <div required>
+                    <input type="radio" name="opinion" value="good" checked>
                     <label for="good">Beary good!</label>
-                    <input type="radio" name="opinion" value="mi">
+                    <input type="radio" name="opinion" value="bad">
                     <label for="mid">Bearly okay</label>
-                    <input type="radio" name="opinion" value="ba">
+                    <input type="radio" name="opinion" value="bad">
                     <label for="bad">Unbearable</label>
                 </div>
                 <div class="textcont">
                     <label for="message">now tail us...</label>
-                    <textarea autofocus name="message" id="message" rows="15" cols="30">
+                    <textarea autofocus required name="message" id="message" rows="15" cols="30">
                     </textarea>
                     {{#if error}}
-                    <p class="fbtxt">You did not complain the right amount</p>
+                    <p class="fbtxt">Message too short</p>
+                    {{/if}}
+                    {{#if msg}}
+                    <p class="fbtxtverde">Thank you for your opinion! we are so gonna read that</p>
                     {{/if}}
                     <div class="buttons">
                         <button type="submit" class="button button-block" />Send</button>

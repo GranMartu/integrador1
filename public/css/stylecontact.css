@@ -104,6 +104,13 @@ span {
 .fbtxt {
     margin: 0;
     font-family: 'Cormorant SC', serif;
-    font-size: 1.5rem;
-    color: rgb(131, 10, 10);
+    font-size: 2.5rem;
+    color: rgb(230, 113, 113);
+}
+
+.fbtxtverde {
+    margin: 0;
+    font-family: 'Cormorant SC', serif;
+    font-size: 2.5rem;
+    color: rgb(10, 131, 60);
 }

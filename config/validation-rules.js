@@ -31,7 +31,6 @@ const registrationrules = [
 
 ]
 const contactrules = [
-    body("opinion").isLength(2).withMessage("something went wrong, try again"),
-    body("message").notEmpty().trim(" ").isLength({ min: 10, max: 200 }).withMessage("you're not complaining the right amount")
+    body("message").notEmpty().trim(" ").isLength({ min: 10 }).withMessage("you're not complaining the right amount")
 ]
 module.exports = { registrationrules, contactrules };

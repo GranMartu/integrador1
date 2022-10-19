@@ -2,13 +2,22 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.register-menu {
+img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.image-container {
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
 }
 
 body {
-    background-color: #484f4f;
+    background-color: rgb(131, 10, 10);
 
 }
 
@@ -83,11 +92,31 @@ textarea {
     transition: all 500ms ease;
 }
 
+.deletebutton {
+    border: 2px solid rgb(53, 3, 3);
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: rgb(131, 10, 10);
+    color: black;
+    transition: all 500ms ease;
+}
+
 .button a {
     color: black;
 }
 
 .button:hover {
+    transform: scale(103%);
+
+}
+
+.deletebutton:hover {
     transform: scale(103%);
 
 }
@@ -98,7 +127,7 @@ textarea {
 }
 
 .fb1 {
-    font-size: 2rem;
+    font-size: 1rem;
     /* font-weight: bold; */
     text-align: center;
 }
@@ -108,24 +137,15 @@ textarea {
     font-family: 'Cormorant SC', serif;
     font-style: bold;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .fbtxt {
-    text-align: center;
     margin: 0;
     font-family: 'Cormorant SC', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(131, 10, 10);
-}
-
-.fbtxtverde {
-    text-align: center;
-    margin: 0;
-    font-family: 'Cormorant SC', serif;
-    font-size: 2rem;
-    color: rgb(10, 131, 60);
 }
 
 #logout {
